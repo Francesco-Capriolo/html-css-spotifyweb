@@ -23,6 +23,7 @@ grey rgba(163, 163, 163, 255)
 main {
     height: 90vh;
     color: white;
+    flex-wrap: wrap;
 }
 
 .relative {
@@ -40,7 +41,7 @@ main {
     min-width: 230px;
     min-height: 70px;
     width: 85%;
-    height: 8%;
+    height: 70px;
     flex-direction: row-reverse;
     background-color: rgba(8, 11, 18, 255);
 }
@@ -129,6 +130,20 @@ nav.user a span {
     width: 85%;
     height: 100%;
     background-color: rgba(20, 25, 34, 255);
+}
+
+div.change-page {
+    position: relative;
+    top: 70px;
+    height: 20px;
+    margin: 10px auto;
+    color: grey;
+}
+
+div.change-page ol li {
+    display: inline;
+    text-transform: uppercase;
+    padding-left: 5px;
 }
 
 
