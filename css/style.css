@@ -13,42 +13,121 @@ grey rgba(163, 163, 163, 255)
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
 
 .flex {
     display: flex;
-    flex-wrap: wrap;
 }
 
+main {
+    height: 90vh;
+    color: white;
+}
+
+.relative {
+    position: relative;
+}
 
 /* main top */
 
-main {
-    width: 100vh;
-    height: 90vh;
-}
 
 .navbar-top {
-    width: 85vh;
-    height: 10vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    align-items: center;
+    min-width: 230px;
+    min-height: 70px;
+    width: 85%;
+    height: 8%;
+    flex-direction: row-reverse;
     background-color: rgba(8, 11, 18, 255);
 }
 
+div.navbar-top button {
+    padding: .5rem 2rem;
+    margin-right: 15px;
+    background-color: transparent;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
+}
 
-/* main left */
+
+/* main nav left */
+
+.col {
+    flex-direction: column;
+}
 
 .navbar-left {
-    width: 15vh;
-    height: 90vh;
+    width: 15%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 255);
+}
+
+section.navbar-left img {
+    width: 90%;
+    padding: 15px;
+}
+
+section.navbar-left nav,
+section.navbar-left nav a,
+section.navbar-left div a {
+    padding: 5px 10px;
+    color: grey;
+    text-decoration-line: none;
+}
+
+h5 {
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: white;
+}
+
+section.navbar-left nav img {
+    width: 15%;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.nav-playlist i {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+section.navbar-left nav.user {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+section.navbar-left nav.user a:first-child img {
+    width: 10%;
+}
+
+section.navbar-left nav.user a:last-child img {
+    background-color: grey;
+    border-radius: 50%;
+}
+
+div.line-grey {
+    border-bottom: 1px solid grey;
+    margin: 5px 0;
+}
+
+nav.user a span {
+    color: white;
+    font-weight: 900;
 }
 
 
 /* central main */
 
 .container {
-    width: 85vh;
-    height: 85vh;
+    width: 85%;
+    height: 100%;
     background-color: rgba(20, 25, 34, 255);
 }
 
