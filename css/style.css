@@ -23,7 +23,6 @@ grey rgba(163, 163, 163, 255)
 main {
     height: 90vh;
     color: white;
-    flex-wrap: wrap;
 }
 
 .relative {
@@ -64,8 +63,9 @@ div.navbar-top button {
 
 .navbar-left {
     width: 15%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 255);
+    min-width: 200px;
+    z-index: 1;
 }
 
 section.navbar-left img {
@@ -132,9 +132,17 @@ nav.user a span {
     background-color: rgba(20, 25, 34, 255);
 }
 
-div.change-page {
+.container-sound {
     position: relative;
+    overflow: auto;
     top: 70px;
+    width: 100%;
+    height: calc(100% - 70px);
+    padding: 5px 15px;
+}
+
+div.change-page {
+    justify-content: center;
     height: 20px;
     margin: 10px auto;
     color: grey;
@@ -146,6 +154,28 @@ div.change-page ol li {
     padding-left: 5px;
 }
 
+h2 {
+    margin-top: 20px;
+}
+
+.album-selected {
+    flex-wrap: wrap;
+
+}
+
+div.mini-card {
+    width: 200px;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+div.mini-card img {
+    width: 100%;
+}
+
+.border-fifhty {
+    border-radius: 50%;
+}
 
 /* footer */
 
