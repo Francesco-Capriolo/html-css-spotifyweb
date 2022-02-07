@@ -163,7 +163,11 @@ div.change-page {
     height: 20px;
     color: grey;
     margin: 10px auto;
-    text-align: center;
+}
+
+div.change-page,
+ol.flex {
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -171,6 +175,14 @@ div.change-page ol li {
     display: inline;
     padding-left: 5px;
     text-transform: uppercase;
+}
+
+div.color-green {
+    display: none;
+    width: 40%;
+    height: 3px;
+    margin: 5px auto;
+    background-color: rgba(173, 255, 47, 255);
 }
 
 h2 {
@@ -189,6 +201,29 @@ div.mini-card {
 
 div.mini-card img {
     width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+div.overlay i {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
 }
 
 .border-fifhty {
@@ -263,6 +298,20 @@ div.footer-sound i {
 }
 
 /* HOVER */
+
+div.navbar-top button:hover {
+    transition: 1s;
+    font-size: medium;
+}
+
+div.change-page ol li:hover div.color-green {
+    display: block;
+}
+
+div.mini-card:hover .overlay {
+    background-color: black;
+    opacity: .5;
+}
 
 div.icon i:hover,
 div.footer-sound i:hover,
