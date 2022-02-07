@@ -205,7 +205,7 @@
 
     </main>
 
-    <footer class="flex">
+    <footer class="flex relative">
 
         <!-- div laterale sinistro -->
 
@@ -228,19 +228,19 @@
         <!-- div centrale -->
 
         <div class="flex col footer-central">
-            <div>
+            <div class="icon-play">
                 <i class="fas fa-random"></i>
                 <i class="fas fa-step-backward"></i>
                 <i class="far fa-play-circle"></i>
                 <i class="fas fa-step-forward"></i>
                 <i class="fas fa-redo"></i>
             </div>
-            <div class="flex footer-music">
+            <div class="flex footer-music ">
                 <span>
                     0:25
                 </span>
-                <div class=" music-bar">
-                    <div class="music-listen">
+                <div class="play-music music-bar">
+                    <div class="music-listen relative">
                         <div class="music-point"></div>
                     </div>
                 </div>
@@ -249,7 +249,18 @@
                 </span>
             </div>
         </div>
-        <div></div>
+
+        <!-- div laterale destro -->
+
+        <div class="flex footer-sound">
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <div class="sound-music music-bar">
+                <div class="music-listen relative">
+                    <div class="music-point"></div>
+                </div>
+            </div>
     </footer>
 
 </body>

@@ -17,8 +17,8 @@ grey rgba(163, 163, 163, 255)
 }
 
 main {
-    height: calc(100vh - 80px);
     color: white;
+    height: calc(100vh - 80px);
 }
 
 /* classi comuni */
@@ -29,6 +29,10 @@ main {
 
 .col {
     flex-direction: column;
+}
+
+.relative {
+    position: relative;
 }
 
 h2,
@@ -69,15 +73,15 @@ section.navbar-left img {
 }
 
 section.navbar-left nav a {
-    padding: 5px 10px;
     color: grey;
+    padding: 5px 10px;
     text-decoration-line: none;
 }
 
 section.navbar-left nav img {
     width: 15%;
-    vertical-align: middle;
     padding: 0;
+    vertical-align: middle;
 }
 
 .nav-playlist {
@@ -110,15 +114,14 @@ section.navbar-left nav.user a {
 
 div.line-grey {
     margin: 0 auto;
-    border-bottom: 1px solid grey;
     margin: 5px 0;
+    border-bottom: 1px solid grey;
 }
 
-nav.user a span {
+nav.user a:last-child span {
     color: white;
     font-weight: 900;
 }
-
 
 /* central main */
 
@@ -146,28 +149,28 @@ nav.user a span {
 }
 
 div.navbar-top button {
-    padding: .5rem 2rem;
+    color: white;
     margin-right: 15px;
-    background-color: transparent;
+    padding: .5rem 2rem;
     border-radius: 20px;
     text-transform: uppercase;
-    color: white;
+    background-color: transparent;
 }
 
 /* corpo centrale */
 
 div.change-page {
-    justify-content: center;
     height: 20px;
-    margin: 10px auto;
     color: grey;
+    margin: 10px auto;
     text-align: center;
+    justify-content: center;
 }
 
 div.change-page ol li {
     display: inline;
-    text-transform: uppercase;
     padding-left: 5px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -176,7 +179,6 @@ h2 {
 
 .album-selected {
     flex-wrap: wrap;
-
 }
 
 div.mini-card {
@@ -196,9 +198,8 @@ div.mini-card img {
 /* footer */
 
 footer {
-    height: 80px;
-    position: relative;
     z-index: 1;
+    height: 80px;
     justify-content: space-between;
     background-color: rgba(40, 40, 40, 255);
 }
@@ -208,7 +209,7 @@ footer div {
 }
 
 footer div img {
-    width: 16%;
+    width: 80px;
     padding: 12px;
 }
 
@@ -220,24 +221,71 @@ footer div.icon i {
     padding: 5px;
 }
 
+div.icon-play i {
+    padding: 10px;
+    color: white;
+}
+
+div.play-music {
+    width: 30vw;
+}
+
+div.sound-music {
+    width: 10vw;
+}
+
 div.music-bar {
-    width: 300px;
-    height: 10px;
-    background-color: gray;
-    border-radius: 10px;
+    height: 5px;
     margin: 10px;
+    border-radius: 10px;
+    background-color: gray;
 }
 
 div.music-listen {
-    width: 100px;
-    height: 10px;
+    width: 20%;
+    height: 5px;
     border-radius: 10px;
     background-color: rgb(196, 194, 194);
 }
 
-div.music.point {
+div.music-point {
+    display: none;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: (173, 255, 47, 255);
+    position: absolute;
+    top: -3px;
+    right: 0;
 }
+
+div.footer-sound i {
+    padding: 5px;
+}
+
+/* HOVER */
+
+div.icon i:hover,
+div.footer-sound i:hover,
+section.navbar-left a:hover {
+    color: white;
+}
+
+section.navbar-left a:hover {
+    border-left: 1px solid rgba(173, 255, 47, 255);
+}
+
+div.icon-play i:hover {
+    color: rgba(173, 255, 47, 255);
+}
+
+div.music-listen:hover {
+    background-color: rgba(173, 255, 47, 255);
+}
+
+div.music-listen:hover .music-point {
+    display: inline-block;
+    background-color: rgb(196, 194, 194);
+}
+
+
+/* mediaquery */
