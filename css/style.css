@@ -17,7 +17,7 @@ grey rgba(163, 163, 163, 255)
 }
 
 main {
-    height: 90vh;
+    height: calc(100vh - 80px);
     color: white;
 }
 
@@ -66,9 +66,7 @@ section.navbar-left img {
     padding: 15px;
 }
 
-section.navbar-left nav,
-section.navbar-left nav a,
-section.navbar-left div a {
+section.navbar-left nav a {
     padding: 5px 10px;
     color: grey;
     text-decoration-line: none;
@@ -80,15 +78,19 @@ section.navbar-left nav img {
     padding: 0;
 }
 
+.nav-playlist {
+    overflow: auto;
+}
+
 .nav-playlist i {
     font-size: 2rem;
     vertical-align: middle;
-    overflow: auto;
+
 }
 
 section.navbar-left nav.user {
     margin-top: auto;
-    width: 100%;
+    padding: 10px;
 }
 
 section.navbar-left nav.user a:first-child img {
@@ -100,7 +102,12 @@ section.navbar-left nav.user a:last-child img {
     border-radius: 50%;
 }
 
+section.navbar-left nav.user a {
+    padding: 10px 0;
+}
+
 div.line-grey {
+    margin: 0 auto;
     border-bottom: 1px solid grey;
     margin: 5px 0;
 }
@@ -187,8 +194,9 @@ div.mini-card img {
 /* footer */
 
 footer {
-    height: 10vh;
-    min-height: 80px;
+    height: 80px;
+    position: relative;
+    z-index: 1;
     justify-content: space-between;
     background-color: rgba(40, 40, 40, 255);
 }
