@@ -35,9 +35,7 @@ main {
     position: relative;
 }
 
-h2,
-h5,
-p {
+h5 {
     padding: 10px;
 }
 
@@ -55,6 +53,10 @@ i {
 
 h5 {
     text-transform: uppercase;
+}
+
+p {
+    padding: 10px 0;
 }
 
 
@@ -132,6 +134,7 @@ nav.user a:last-child span {
 .container {
     width: 85%;
     height: 100%;
+    overflow-x: hidden;
     background-color: rgba(20, 25, 34, 255);
 }
 
@@ -189,14 +192,20 @@ div.color-green {
     background-color: rgba(173, 255, 47, 255);
 }
 
-h2 {
-    margin-top: 20px;
+div.title-selected {
+    width: 95%;
+    margin: 20px auto 10px;
 }
 
 
+div.album-selected {
+    width: 95%;
+    margin: 20px auto;
+    gap: 10px;
+}
+
 div.mini-card {
-    width: 200px;
-    margin: 20px 10px;
+    width: calc(100% / 6);
     text-align: center;
 }
 
@@ -207,24 +216,23 @@ div.mini-card img {
 .overlay {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
+    bottom: 0;
     opacity: 0;
+    width: 100%;
+    height: 100%;
     transition: .5s ease;
 }
 
 div.overlay i {
-    color: white;
-    font-size: 80px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
     text-align: center;
-
+    transform: translate(-50%, -50%);
 }
 
 .border-fifhty {
@@ -305,6 +313,10 @@ div.navbar-top button:hover {
     font-size: medium;
 }
 
+div.change-page ol li:hover {
+    color: white;
+}
+
 div.change-page ol li:hover div.color-green {
     display: block;
 }
@@ -370,7 +382,8 @@ div.music-listen:hover .music-point {
 }
 
 @media screen and (max-width: 992px) {
-    .album-selected {
-        flex-wrap: wrap;
+
+    div.mini-card {
+        width: calc(100% / 4);
     }
 }
