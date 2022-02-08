@@ -208,6 +208,7 @@ div.album-selected {
 div.mini-card {
     width: calc((100% - 5%) / 6);
     text-align: center;
+    padding-bottom: 5px;
 }
 
 div.mini-card img {
@@ -276,16 +277,16 @@ div.icon-play i:nth-of-type(3) {
 }
 
 div.play-music {
-    width: 30vw;
+    width: 25vw;
 }
 
 div.sound-music {
-    width: 10vw;
+    width: 8vw;
 }
 
 div.music-bar {
     height: 5px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 10px;
     background-color: gray;
 }
@@ -400,6 +401,11 @@ div.music-listen:hover .music-point {
 
     footer div.description {
         font-size: 10px;
+    }
+
+    div.icon-play i {
+        font-size: small;
+        padding: 3px;
     }
 
 }
