@@ -201,11 +201,12 @@ div.title-selected {
 div.album-selected {
     width: 95%;
     margin: 20px auto;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 1%;
 }
 
 div.mini-card {
-    width: calc(100% / 6);
+    width: calc((100% - 5%) / 6);
     text-align: center;
 }
 
@@ -268,6 +269,10 @@ footer div.icon i {
 div.icon-play i {
     padding: 10px;
     color: white;
+}
+
+div.icon-play i:nth-of-type(3) {
+    font-size: x-large;
 }
 
 div.play-music {
@@ -352,7 +357,25 @@ div.music-listen:hover .music-point {
 
 /* mediaquery */
 
+
+@media screen and (max-width: 992px) {
+
+    div.mini-card {
+        width: calc((100% - 5%) / 4);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.mini-card {
+        width: calc((100% - 5%) / 3);
+    }
+}
+
 @media screen and (max-width: 575px) {
+
+    div.mini-card {
+        width: calc((100% - 5%) / 2);
+    }
 
     section.navbar-left,
     section.container {
@@ -379,11 +402,4 @@ div.music-listen:hover .music-point {
         font-size: 10px;
     }
 
-}
-
-@media screen and (max-width: 992px) {
-
-    div.mini-card {
-        width: calc(100% / 4);
-    }
 }
