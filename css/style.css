@@ -276,6 +276,10 @@ div.icon-play i:nth-of-type(3) {
     font-size: x-large;
 }
 
+div.footer-central {
+    justify-content: center;
+}
+
 div.play-music {
     width: 25vw;
 }
@@ -360,6 +364,9 @@ div.music-listen:hover .music-point {
 
 
 @media screen and (max-width: 992px) {
+    * {
+        transition: .5s;
+    }
 
     div.mini-card {
         width: calc((100% - 5%) / 4);
@@ -372,7 +379,7 @@ div.music-listen:hover .music-point {
     }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
 
     div.mini-card {
         width: calc((100% - 5%) / 2);
@@ -399,12 +406,7 @@ div.music-listen:hover .music-point {
         display: none;
     }
 
-    footer div.description {
-        font-size: 10px;
-    }
-
     div.icon-play i {
-        font-size: small;
         padding: 3px;
     }
 
